@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruh.</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- End of styles -->
+</head>
+<body class="shopPage">
+  
+    <header>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <a href="#"><img src="assets/icons/topLogo.png" alt="logo" id="logo"></a>
+
+      <div>
+        <ul class="navLinks">
+          <li class="navLink"><a href="index.html">Home</a></li>
+          <li class="navLink"><a href="shop.html">Shop</a></li>
+          <li class="navLink"><a href="blog.html">Blog</a></li>
+          <li class="navLink"><a href="about.html">About</a></li>
+          <li class="navLink"><a href="contact.html">Contact</a></li>
+          <li class="navLink"><i class='bx bx-cart-alt' id="cart-icon" onclick="toggleCart()"></i></a></li>
+
+          <div id="cart-popup" class="cart-popup">
+            <div id="cart-content">
+              Your cart is empty!
+            </div> <!--End of cart-content-->
+            <div id="totalPrice">
+            </div> <!--End of total Price-->
+            <div id="checkOutBtn">
+              <a href="cart.html">CheckOut</a>
+            </div>
+          </div> <!--End of cart-popup-->
+
+        </ul>
+      </div>
+
+    </header>
+
+    <main>
+      <section id="hero">
+        <h4>Scroll down for more!</h4>
+        <h1>ALL products -<span>up to</span> 70% OFF</h1>
+        <button><a href="shop.html">Shop Now</a></button>
+      </section>
+    </main>
+
+    <section class="featProducts">
+      <h2>Featured Products</h2>
+      <p>Summer Collection</p>
+      <div class="proContainer">
+        <div class="product">
+          <img src="../assets/products/f1.jpg" alt="">
+          <div class="description">
+            <span>Adidas</span> <!--Brand Name-->
+            <h5>Shirt summer hot</h5> <!--Product Name-->
+            <div class="star">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star-half' ></i>
+            </div> <!--Stars-->
+            <h4>$14.99</h4>
+            <div onclick="addToCart('Brand Shirt' , 15)">
+              <i class='bx bxs-cart-add' ></i>
+            </div>
+          </div> <!--Description-->
+        </div> <!--Product-->
+        <div class="product">
+          <img src="../assets/products/f2.jpg" alt="">
+          <div class="description">
+            <span>Adidas</span> <!--Brand Name-->
+            <h5>Shirt summer hot</h5> <!--Product Name-->
+            <div class="star">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star-half' ></i>
+            </div> <!--Stars-->
+            <h4>$14.99</h4>
+            <div onclick="addToCart('Brand Shirt' , 15)">
+              <i class='bx bxs-cart-add' ></i>
+            </div>
+          </div> <!--Description-->
+        </div> <!--Product-->
+        <div class="product">
+          <img src="../assets/products/f3.jpg" alt="">
+          <div class="description">
+            <span>Adidas</span> <!--Brand Name-->
+            <h5>Shirt summer hot</h5> <!--Product Name-->
+            <div class="star">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star-half' ></i>
+            </div> <!--Stars-->
+            <h4>$14.99</h4>
+            <div onclick="addToCart('Brand Shirt' , 15)">
+              <i class='bx bxs-cart-add' ></i>
+            </div>
+          </div> <!--Description-->
+        </div> <!--Product-->
+        <div class="product">
+          <img src="../assets/products/f4.jpg" alt="">
+          <div class="description">
+            <span>Adidas</span> <!--Brand Name-->
+            <h5>Shirt summer hot</h5> <!--Product Name-->
+            <div class="star">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star-half' ></i>
+            </div> <!--Stars-->
+            <h4>$14.99</h4>
+            <div onclick="addToCart('Brand Shirt' , 15)">
+              <i class='bx bxs-cart-add' ></i>
+            </div>
+          </div> <!--Description-->
+        </div> <!--Product-->
+        <div class="product">
+          <img src="../assets/products/f5.jpg" alt="">
+          <div class="description">
+            <span>Adidas</span> <!--Brand Name-->
+            <h5>Shirt summer hot</h5> <!--Product Name-->
+            <div class="star">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star-half' ></i>
+            </div> <!--Stars-->
+            <h4>$14.99</h4>
+            <div onclick="addToCart('Brand Shirt' , 15)">
+              <i class='bx bxs-cart-add' ></i>
+            </div>
+          </div> <!--Description-->
+        </div> <!--Product-->
+        <div class="product">
+          <img src="../assets/products/f6.jpg" alt="">
+          <div class="description">
+            <span>Adidas</span> <!--Brand Name-->
+            <h5>Shirt summer hot</h5> <!--Product Name-->
+            <div class="star">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star-half' ></i>
+            </div> <!--Stars-->
+            <h4>$14.99</h4>
+            <div onclick="addToCart('Brand Shirt' , 15)">
+              <i class='bx bxs-cart-add' ></i>
+            </div>
+          </div> <!--Description-->
+        </div> <!--Product-->
+        <div class="product">
+          <img src="../assets/products/f7.jpg" alt="">
+          <div class="description">
+            <span>Adidas</span> <!--Brand Name-->
+            <h5>Shirt summer hot</h5> <!--Product Name-->
+            <div class="star">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star-half' ></i>
+            </div> <!--Stars-->
+            <h4>$14.99</h4>
+            <div onclick="addToCart('Brand Shirt' , 15)">
+              <i class='bx bxs-cart-add' ></i>
+            </div>
+          </div> <!--Description-->
+        </div> <!--Product-->
+        <div class="product">
+          <img src="../assets/products/f8.jpg" alt="">
+          <div class="description">
+            <span>Adidas</span> <!--Brand Name-->
+            <h5>Shirt summer hot</h5> <!--Product Name-->
+            <div class="star">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star-half' ></i>
+            </div> <!--Stars-->
+            <h4>$14.99</h4>
+            <div onclick="addToCart('Brand Shirt' , 15)">
+              <i class='bx bxs-cart-add' ></i>
+            </div>
+          </div> <!--Description-->
+        </div> <!--Product-->
+      </div> <!--Product Container-->
+    </section>
+
+    <section class="featProducts">
+      <h2>New Arrivals</h2>
+      <p>Fresh clothes for a fresh look</p>
+      <div class="proContainer">
+        <div class="product">
+          <img src="../assets/products/n1.jpg" alt="">
+          <div class="description">
+            <span>Adidas</span> <!--Brand Name-->
+            <h5>Shirt summer hot</h5> <!--Product Name-->
+            <div class="star">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star-half' ></i>
+            </div> <!--Stars-->
+            <h4>$14.99</h4>
+            <div onclick="addToCart('Brand Shirt' , 15)">
+              <i class='bx bxs-cart-add' ></i>
+            </div>
+          </div> <!--Description-->
+        </div> <!--Product-->
+        <div class="product">
+          <img src="../assets/products/n2.jpg" alt="">
+          <div class="description">
+            <span>Adidas</span> <!--Brand Name-->
+            <h5>Shirt summer hot</h5> <!--Product Name-->
+            <div class="star">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star-half' ></i>
+            </div> <!--Stars-->
+            <h4>$14.99</h4>
+            <div onclick="addToCart('Brand Shirt' , 15)">
+              <i class='bx bxs-cart-add' ></i>
+            </div>
+          </div> <!--Description-->
+        </div> <!--Product-->
+        <div class="product">
+          <img src="../assets/products/n3.jpg" alt="">
+          <div class="description">
+            <span>Adidas</span> <!--Brand Name-->
+            <h5>Shirt summer hot</h5> <!--Product Name-->
+            <div class="star">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star-half' ></i>
+            </div> <!--Stars-->
+            <h4>$14.99</h4>
+            <div onclick="addToCart('Brand Shirt' , 15)">
+              <i class='bx bxs-cart-add' ></i>
+            </div>
+          </div> <!--Description-->
+        </div> <!--Product-->
+        <div class="product">
+          <img src="../assets/products/n4.jpg" alt="">
+          <div class="description">
+            <span>Adidas</span> <!--Brand Name-->
+            <h5>Shirt summer hot</h5> <!--Product Name-->
+            <div class="star">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star-half' ></i>
+            </div> <!--Stars-->
+            <h4>$14.99</h4>
+            <div onclick="addToCart('Brand Shirt' , 15)">
+              <i class='bx bxs-cart-add' ></i>
+            </div>
+          </div> <!--Description-->
+        </div> <!--Product-->
+        <div class="product">
+          <img src="../assets/products/n5.jpg" alt="">
+          <div class="description">
+            <span>Adidas</span> <!--Brand Name-->
+            <h5>Shirt summer hot</h5> <!--Product Name-->
+            <div class="star">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star-half' ></i>
+            </div> <!--Stars-->
+            <h4>$14.99</h4>
+            <div onclick="addToCart('Brand Shirt' , 15)">
+              <i class='bx bxs-cart-add' ></i>
+            </div>
+          </div> <!--Description-->
+        </div> <!--Product-->
+        <div class="product">
+          <img src="../assets/products/n6.jpg" alt="">
+          <div class="description">
+            <span>Adidas</span> <!--Brand Name-->
+            <h5>Shirt summer hot</h5> <!--Product Name-->
+            <div class="star">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star-half' ></i>
+            </div> <!--Stars-->
+            <h4>$14.99</h4>
+            <div onclick="addToCart('Brand Shirt' , 15)">
+              <i class='bx bxs-cart-add' ></i>
+            </div>
+          </div> <!--Description-->
+        </div> <!--Product-->
+        <div class="product">
+          <img src="../assets/products/n7.jpg" alt="">
+          <div class="description">
+            <span>Adidas</span> <!--Brand Name-->
+            <h5>Shirt summer hot</h5> <!--Product Name-->
+            <div class="star">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star-half' ></i>
+            </div> <!--Stars-->
+            <h4>$14.99</h4>
+            <div onclick="addToCart('Brand Shirt' , 15)">
+              <i class='bx bxs-cart-add' ></i>
+            </div>
+          </div> <!--Description-->
+        </div> <!--Product-->
+        <div class="product">
+          <img src="../assets/products/n8.jpg" alt="">
+          <div class="description">
+            <span>Adidas</span> <!--Brand Name-->
+            <h5>Shirt summer hot</h5> <!--Product Name-->
+            <div class="star">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star-half' ></i>
+            </div> <!--Stars-->
+            <h4>$14.99</h4>
+            <div onclick="addToCart('Brand Shirt' , 15)">
+              <i class='bx bxs-cart-add' ></i>
+            </div>
+          </div> <!--Description-->
+        </div> <!--Product-->
+      </div> <!--Product Container-->
+    </section>
+
+    <section id="newsLetter-sec">
+      <div class="newsText">
+        <h4>Subscribe to our NewsLetter</h4>
+        <p>Dont miss out on monthly sales and <span>special offers</span></p>
+      </div>
+      <div class="newsInput">
+        <form action="" method="">
+          <input type="email" placeholder="example@gmail.com">
+          <button>Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="cont-about-Container">
+        <div class="contact">
+          <h4>Contact</h4>
+          <span id="contInfo">
+            <p><b>Address:</b> Example Address</p>
+            <p><b>Phone:</b> +30 6911111111 / +30 2310102010</p>
+            <p><b>Hours:</b> 10:00 - 18:00 Mon-Sat</p>
+          </span>
+          <span>Follow Us</span>
+          <span class="social">
+            <i class='bx bxl-instagram-alt'></i>
+            <i class='bx bxl-twitter' ></i>
+            <i class='bx bxl-facebook-square' ></i>
+            <i class='bx bxl-github' ></i>
+            <i class='bx bxl-linkedin-square' ></i>
+          </span>
+        </div> <!--End of contact-->
+        <div class="about">
+          <h4>About</h4>
+          <span id="abInfo">
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </span>
+        </div> <!--End of about-->
+        <div class="account">
+          <h4>Account</h4>
+          <span id="accInfo">
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+          </span>
+        </div> <!--End of account-->
+        <div class="services">
+          <h4>Install App</h4>
+          <p>From App Store or Google Play</p>
+          <div class="downBtns">
+            <img src="/assets/images/app.jpg" alt="App store Download">
+            <img src="/assets/images/play.jpg" alt="Play store Download">
+          </div>  <!--End of downBtns-->
+          <div class="paymSafety">
+            <p><b>Secured Payment Gateways</b></p>
+            <img src="/assets/images/pay.png" alt="Payment methods">
+          </div> <!--End of paymSafety-->
+        </div> <!--End of services-->
+      </div> <!--End of cont-about-Container-->
+      <div class="copyright">
+        <p><i class='bx bx-copyright'></i>2025. Bruh. - Bruh clothing E-commerce - All rights reserved</p>
+      </div>
+    </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
